@@ -1,0 +1,21 @@
+{
+  "name": "lemmy-translator-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node bot.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "APGL-3.0",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "lemmy-bot": "^0.2.0"
+  }
+}
