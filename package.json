@@ -2,9 +2,9 @@
   "name": "lemmy-translator-bot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/bot.ts",
   "scripts": {
-    "start": "ts-node bot.ts"
+    "start": "ts-node src/bot.ts"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +15,8 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "deepl-node": "^1.9.0",
     "dotenv": "^16.0.3",
-    "lemmy-bot": "^0.2.0"
+    "lemmy-bot": "^0.2.2"
   }
 }
