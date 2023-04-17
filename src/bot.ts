@@ -48,7 +48,15 @@ const bot = new LemmyBot({
         if (type === 'post') {
           const { post } = data as PostView;
           const { text } = await translator.translateText(
-            `${post.name}${post.body ? `\n\n${post.body}` : ''}`,
+            `# ${post.name}${
+              post.body
+                ? `\n\n${
+                    post.body.length > 50 && !/:::\s+spoiler/.test(post.body)
+                      ? `::: spoiler Translation\n${post.body}\n:::`
+                      : post.body
+                  }`
+                : ''
+            }`,
             null,
             languageCode
           );
@@ -59,10 +67,14 @@ const bot = new LemmyBot({
             parentId: comment.id,
           });
         } else {
-          const parentComment = data as CommentView;
+          const {
+            comment: { content: parentContent },
+          } = data as CommentView;
 
           const { text } = await translator.translateText(
-            parentComment.comment.content,
+            parentContent.length > 50 && !/:::\s+spoiler/.test(parentContent)
+              ? `::: spoiler Translation\n${parentContent}\n:::`
+              : parentContent,
             null,
             languageCode
           );
