@@ -10,8 +10,6 @@ const { INSTANCE, USERNAME_OR_EMAIL, PASSWORD, DEEPL_API_KEY } =
 
 const translator = new Translator(DEEPL_API_KEY);
 
-console.log(PASSWORD);
-
 const bot = new LemmyBot({
   instance: INSTANCE,
   credentials: {
