@@ -1,4 +1,4 @@
-import LemmyBot from 'lemmy-bot';
+import LemmyBot, { CommentView, PostView } from 'lemmy-bot';
 import { config } from 'dotenv';
 import { signoffMap, translateTriggers } from './translationUtils';
 import { Translator } from 'deepl-node';
@@ -21,35 +21,33 @@ const bot = new LemmyBot({
   dbFile: 'db.sqlite3',
   handlers: {
     async mention({
-      mentionView: {
-        comment: { path, content, post_id, id },
-      },
-      botActions: { createComment, getPost, getComment },
+      mentionView: { comment },
+      botActions: { createComment, getParentOfComment },
     }) {
       const languageCode = translateTriggers.find(({ trigger, language }) =>
-        content
+        comment.content
           .toLocaleLowerCase(language)
           .includes(trigger.toLocaleLowerCase(language))
       )?.language;
 
       if (!languageCode) {
         createComment({
-          postId: post_id,
-          parentId: id,
+          postId: comment.post_id,
+          parentId: comment.id,
           content: 'Could not detect language to translate to',
         });
       } else if ((await translator.getUsage()).anyLimitReached()) {
         createComment({
           content:
             'Cannot translate: character limit for the month has been reached',
-          postId: post_id,
-          parentId: id,
+          postId: comment.post_id,
+          parentId: comment.id,
         });
       } else {
-        const pathList = path.split('.').filter((i) => i !== '0');
+        const { type, data } = await getParentOfComment(comment);
 
-        if (pathList.length === 1) {
-          const { post } = await getPost(post_id);
+        if (type === 'post') {
+          const { post } = data as PostView;
           const { text } = await translator.translateText(
             `${post.name}${post.body ? `\n\n${post.body}` : ''}`,
             null,
@@ -58,15 +56,11 @@ const bot = new LemmyBot({
 
           createComment({
             content: `${text}\n\n*${signoffMap.get(languageCode)}*`,
-            postId: post_id,
-            parentId: id,
+            postId: comment.post_id,
+            parentId: comment.id,
           });
         } else {
-          const parentId = Number(pathList[pathList.length - 2]);
-          const parentComment = await getComment({
-            id: parentId,
-            postId: post_id,
-          });
+          const parentComment = data as CommentView;
 
           const { text } = await translator.translateText(
             parentComment.comment.content,
@@ -76,8 +70,8 @@ const bot = new LemmyBot({
 
           createComment({
             content: `${text}\n\n*${signoffMap.get(languageCode)}*`,
-            postId: post_id,
-            parentId: id,
+            postId: comment.post_id,
+            parentId: comment.id,
           });
         }
       }
