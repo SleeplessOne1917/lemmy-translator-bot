@@ -1,6 +1,6 @@
 import LemmyBot, { CommentView, PostView } from 'lemmy-bot';
 import { config } from 'dotenv';
-import { signoffMap, translateTriggers } from './translationUtils';
+import { limitMap, signoffMap, translateTriggers } from './translationUtils';
 import { Translator } from 'deepl-node';
 
 config();
@@ -38,8 +38,7 @@ const bot = new LemmyBot({
         });
       } else if ((await translator.getUsage()).anyLimitReached()) {
         createComment({
-          content:
-            'Cannot translate: character limit for the month has been reached',
+          content: limitMap.get(languageCode)!,
           postId: comment.post_id,
           parentId: comment.id,
         });

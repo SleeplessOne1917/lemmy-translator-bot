@@ -245,3 +245,79 @@ export const signoffMap = new Map<TargetLanguageCode, string>([
   ['tr', 'Bu metin DeepL kullanılarak çevrilmiştir.'],
   ['uk', 'Цей текст перекладено за допомогою DeepL.'],
 ]);
+
+export const limitMap = new Map<TargetLanguageCode, string>([
+  [
+    'en-US',
+    'Cannot translate: character limit for the month has been reached.',
+  ],
+  [
+    'en-GB',
+    'Cannot translate: character limit for the month has been reached.',
+  ],
+  [
+    'bg',
+    'Не може да се преведе: ограничението на символите за месеца е достигнато.',
+  ],
+  ['zh', '无法翻译：已达到该月的字符限制。'],
+  ['cs', 'Nelze přeložit: byl dosažen limit znaků pro daný měsíc.'],
+  ['da', 'Kan ikke oversættes: Tegnebegrænsningen for denne måned er nået.'],
+  ['nl', 'Kan niet vertalen: karakterlimiet voor de maand is bereikt.'],
+  ['et', 'Ei saa tõlkida: kuu tähemärkide arv on saavutatud.'],
+  ['fi', 'Ei voida kääntää: kuukauden merkkiraja on saavutettu.'],
+  [
+    'fr',
+    'Impossible de traduire : la limite de caractères pour le mois a été atteinte.',
+  ],
+  [
+    'de',
+    'Kann nicht übersetzt werden: Das Zeichenlimit für diesen Monat wurde erreicht.',
+  ],
+  [
+    'el',
+    'Δεν είναι δυνατή η μετάφραση: το όριο χαρακτήρων για τον μήνα έχει επιτευχθεί.',
+  ],
+  [
+    'hu',
+    'Nem lehet lefordítani: a hónapra vonatkozó karakterhatár elérte a határt.',
+  ],
+  [
+    'id',
+    'Tidak dapat menerjemahkan: batas karakter untuk bulan tersebut telah tercapai.',
+  ],
+  [
+    'it',
+    'Impossibile tradurre: è stato raggiunto il limite di caratteri per il mese.',
+  ],
+  ['ja', '翻訳できません: 今月の文字数制限に達しました。'],
+  ['ko', '번역할 수 없음: 해당 월의 글자 수 제한에 도달했습니다.'],
+  ['lv', 'Nevar tulkot: ir sasniegts mēneša rakstzīmju limits.'],
+  ['lt', 'Negalima išversti: pasiektas mėnesio simbolių limitas.'],
+  ['nb', 'Kan ikke oversette: tegngrensen for måneden er nådd.'],
+  [
+    'pl',
+    'Nie można przetłumaczyć: limit znaków dla danego miesiąca został osiągnięty.',
+  ],
+  [
+    'pt-BR',
+    'Não é possível traduzir: o limite de caracteres para o mês foi atingido.',
+  ],
+  [
+    'pt-PT',
+    'Não é possível traduzir: o limite de caracteres para o mês foi atingido.',
+  ],
+  [
+    'ro',
+    'Nu se poate traduce: a fost atinsă limita de caractere pentru luna respectivă.',
+  ],
+  ['ru', 'Невозможно перевести: достигнут лимит символов для данного месяца.'],
+  ['sk', 'Nemožno preložiť: dosiahol sa limit znakov pre daný mesiac.'],
+  ['sl', 'Ni mogoče prevesti: omejitev znakov za mesec je bila dosežena.'],
+  [
+    'es',
+    'No se puede traducir: se ha alcanzado el límite de caracteres para el mes.',
+  ],
+  ['sv', 'Kan inte översättas: teckengränsen för månaden har uppnåtts.'],
+  ['tr', 'Çevrilemiyor: ay için karakter sınırına ulaşıldı.'],
+  ['uk', 'Неможливо перекласти: досягнуто ліміт символів для місяця.'],
+]);
