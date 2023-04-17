@@ -1,3 +1,5 @@
+#!/usr/bin/env ts-node
+
 import LemmyBot from 'lemmy-bot';
 import { config } from 'dotenv';
 import { signoffMap, translateTriggers } from './translationUtils';
