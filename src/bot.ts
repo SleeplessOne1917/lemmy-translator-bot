@@ -12,6 +12,11 @@ const { INSTANCE, USERNAME_OR_EMAIL, PASSWORD, DEEPL_API_KEY } =
 
 const translator = new Translator(DEEPL_API_KEY);
 
+const shouldSpoiler = (text: string) =>
+  text.length > 50 && !/:::\s+spoiler/.test(text);
+
+const spoilerify = (text: string) => `::: spoiler Translation\n${text}\n:::`;
+
 const bot = new LemmyBot({
   instance: INSTANCE,
   credentials: {
@@ -52,9 +57,7 @@ const bot = new LemmyBot({
             `# ${post.name}${
               post.body
                 ? `\n\n${
-                    post.body.length > 50 && !/:::\s+spoiler/.test(post.body)
-                      ? `::: spoiler Translation\n${post.body}\n:::`
-                      : post.body
+                    shouldSpoiler(post.body) ? spoilerify(post.body) : post.body
                   }`
                 : ''
             }`,
@@ -73,8 +76,8 @@ const bot = new LemmyBot({
           } = data as CommentView;
 
           const { text } = await translator.translateText(
-            parentContent.length > 50 && !/:::\s+spoiler/.test(parentContent)
-              ? `::: spoiler Translation\n${parentContent}\n:::`
+            shouldSpoiler(parentContent)
+              ? spoilerify(parentContent)
               : parentContent,
             null,
             languageCode
