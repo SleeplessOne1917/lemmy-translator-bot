@@ -19,6 +19,10 @@ export const translateTriggers: TriggerInfo[] = [
     language: 'zh',
   },
   {
+    trigger: '官话',
+    language: 'zh',
+  },
+  {
     trigger: 'Česky',
     language: 'cs',
   },
@@ -104,6 +108,10 @@ export const translateTriggers: TriggerInfo[] = [
   },
   {
     trigger: '倭',
+    language: 'ja',
+  },
+  {
+    trigger: '日本語',
     language: 'ja',
   },
   {
