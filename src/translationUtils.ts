@@ -162,6 +162,82 @@ export const translateTriggers: TriggerInfo[] = [
     language: 'bg',
   },
   {
+    trigger: '保加利亚语',
+    language: 'bg',
+  },
+  {
+    trigger: 'Bulharský',
+    language: 'bg',
+  },
+  {
+    trigger: 'Bulharské',
+    language: 'bg',
+  },
+  {
+    trigger: 'Bulharština',
+    language: 'bg',
+  },
+  {
+    trigger: 'Bulgaar',
+    language: 'bg',
+  },
+  {
+    trigger: 'Βουλγαρικ',
+    language: 'bg',
+  },
+  {
+    trigger: 'Bolgár',
+    language: 'bg',
+  },
+  {
+    trigger: 'Bulgar',
+    language: 'bg',
+  },
+  {
+    trigger: 'ブルガリア',
+    language: 'bg',
+  },
+  {
+    trigger: '불가리아',
+    language: 'bg',
+  },
+  {
+    trigger: 'Bulgār',
+    language: 'bg',
+  },
+  {
+    trigger: 'Bułgarsk',
+    language: 'bg',
+  },
+  {
+    trigger: 'Búlgar',
+    language: 'bg',
+  },
+  {
+    trigger: 'Болгарский',
+    language: 'bg',
+  },
+  {
+    trigger: 'Болгария',
+    language: 'bg',
+  },
+  {
+    trigger: 'Болгарская',
+    language: 'bg',
+  },
+  {
+    trigger: 'Bulhar',
+    language: 'bg',
+  },
+  {
+    trigger: 'Bolgar',
+    language: 'bg',
+  },
+  {
+    trigger: 'Болгарськ',
+    language: 'bg',
+  },
+  {
     trigger: '中国',
     language: 'zh',
   },
