@@ -452,6 +452,126 @@ export const translateTriggers: TriggerInfo[] = [
     language: 'da',
   },
   {
+    trigger: 'Danish',
+    language: 'da',
+  },
+  {
+    trigger: '丹麦',
+    language: 'da',
+  },
+  {
+    trigger: 'Dánsk',
+    language: 'da',
+  },
+  {
+    trigger: 'Dánština',
+    language: 'da',
+  },
+  {
+    trigger: 'Deens',
+    language: 'da',
+  },
+  {
+    trigger: 'Taani',
+    language: 'da',
+  },
+  {
+    trigger: 'Tanska',
+    language: 'da',
+  },
+  {
+    trigger: 'Danois',
+    language: 'da',
+  },
+  {
+    trigger: 'Dänisch',
+    language: 'da',
+  },
+  {
+    trigger: 'Δαν',
+    language: 'da',
+  },
+  {
+    trigger: 'Dán',
+    language: 'da',
+  },
+  {
+    trigger: 'Denmark',
+    language: 'da',
+  },
+  {
+    trigger: 'Danese',
+    language: 'da',
+  },
+  {
+    trigger: 'Danesi',
+    language: 'da',
+  },
+  {
+    trigger: 'デンマーク',
+    language: 'da',
+  },
+  {
+    trigger: '덴마크',
+    language: 'da',
+  },
+  {
+    trigger: 'Dānijas',
+    language: 'da',
+  },
+  {
+    trigger: 'Dāņu',
+    language: 'da',
+  },
+  {
+    trigger: 'Danų',
+    language: 'da',
+  },
+  {
+    trigger: 'Daniškas',
+    language: 'da',
+  },
+  {
+    trigger: 'Duńsk',
+    language: 'da',
+  },
+  {
+    trigger: 'Dinamarquês',
+    language: 'da',
+  },
+  {
+    trigger: 'Dinamarquesa',
+    language: 'da',
+  },
+  {
+    trigger: 'Danez',
+    language: 'da',
+  },
+  {
+    trigger: 'Датск',
+    language: 'da',
+  },
+  {
+    trigger: 'Дания',
+    language: 'da',
+  },
+  {
+    trigger: 'Danés',
+    language: 'da',
+  },
+  {
+    trigger: 'Danimarka',
+    language: 'da',
+  },
+  {
+    trigger: 'Danca',
+    language: 'da',
+  },
+  {
+    trigger: 'Данськ',
+    language: 'da',
+  },
+  {
     trigger: 'Nederlands',
     language: 'nl',
   },
