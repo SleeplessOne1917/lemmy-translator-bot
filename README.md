@@ -14,3 +14,7 @@ Create a file named `.env` in the same directory as `package.json`. There are 4 
 - `DEEPL_API_KEY`: API key required to use DeepL API. [This will require making an account with DeepL](https://www.deepl.com/pro-api?cta=header-pro-api/)
 
 When the bot is setup, it can be started by running `npm start`.
+
+# Usage
+
+To use the bot, mention it and include the name of the language you are translating into. The name of the language must be in the language being translated into, e.g. English is "English", German is "Deutsch", Russian is "Русский", etc.
