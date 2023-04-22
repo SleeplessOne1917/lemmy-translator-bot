@@ -308,6 +308,146 @@ export const translateTriggers: TriggerInfo[] = [
     language: 'cs',
   },
   {
+    trigger: 'Czech',
+    language: 'cs',
+  },
+  {
+    trigger: 'Чешк',
+    language: 'cs',
+  },
+  {
+    trigger: 'Чехия',
+    language: 'cs',
+  },
+  {
+    trigger: '捷克',
+    language: 'cs',
+  },
+  {
+    trigger: 'Tjekk',
+    language: 'cs',
+  },
+  {
+    trigger: 'Tsjechisch',
+    language: 'cs',
+  },
+  {
+    trigger: 'Tšehhi',
+    language: 'cs',
+  },
+  {
+    trigger: 'Tsehhi',
+    language: 'cs',
+  },
+  {
+    trigger: 'Tšek',
+    language: 'cs',
+  },
+  {
+    trigger: 'Tsekin',
+    language: 'cs',
+  },
+  {
+    trigger: 'Tchèque',
+    language: 'cs',
+  },
+  {
+    trigger: 'Tschech',
+    language: 'cs',
+  },
+  {
+    trigger: 'Τσεχ',
+    language: 'cs',
+  },
+  {
+    trigger: 'Cseh',
+    language: 'cs',
+  },
+  {
+    trigger: 'Ceko',
+    language: 'cs',
+  },
+  {
+    trigger: 'Ceca',
+    language: 'cs',
+  },
+  {
+    trigger: 'チェコ',
+    language: 'cs',
+  },
+  {
+    trigger: '체코',
+    language: 'cs',
+  },
+  {
+    trigger: 'Čeh',
+    language: 'cs',
+  },
+  {
+    trigger: 'Čeki',
+    language: 'cs',
+  },
+  {
+    trigger: 'Čekų',
+    language: 'cs',
+  },
+  {
+    trigger: 'Czeski',
+    language: 'cs',
+  },
+  {
+    trigger: 'Checo',
+    language: 'cs',
+  },
+  {
+    trigger: 'Checa',
+    language: 'cs',
+  },
+  {
+    trigger: 'Cehia',
+    language: 'cs',
+  },
+  {
+    trigger: 'Cehii',
+    language: 'cs',
+  },
+  {
+    trigger: 'Cehă',
+    language: 'cs',
+  },
+  {
+    trigger: 'Чехия',
+    language: 'cs',
+  },
+  {
+    trigger: 'Чешск',
+    language: 'cs',
+  },
+  {
+    trigger: 'Česk',
+    language: 'cs',
+  },
+  {
+    trigger: 'Češk',
+    language: 'cs',
+  },
+  {
+    trigger: 'Češčina',
+    language: 'cs',
+  },
+  {
+    trigger: 'Tjeck',
+    language: 'cs',
+  },
+  {
+    trigger: 'Çek',
+    language: 'cs',
+  },
+  {
+    trigger: 'Чеськ',
+    language: 'cs',
+  },
+  {
     trigger: 'Dansk',
     language: 'da',
   },
