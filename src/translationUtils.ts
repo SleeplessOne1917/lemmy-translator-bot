@@ -11,6 +11,153 @@ export const translateTriggers: TriggerInfo[] = [
     language: 'en-US',
   },
   {
+    trigger: 'Английски',
+    language: 'en-US',
+  },
+  {
+    trigger: '英语',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Angličtina',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Anglicky',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Anglický',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Engelsk',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Engels',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Engelse',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Inglise',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Englanti',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Englannin',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Anglais',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Englisch',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Αγγλικά',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Αγγλικό',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Αγγλική',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Angol',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Inggris',
+    language: 'en-US',
+  },
+  { trigger: 'Inglese', language: 'en-US' },
+  {
+    trigger: 'イングリッシュ',
+    language: 'en-US',
+  },
+  {
+    trigger: '英語',
+    language: 'en-US',
+  },
+  {
+    trigger: 'えい',
+    language: 'en-GB',
+  },
+  {
+    trigger: '영어',
+    language: 'en-US',
+  },
+  { trigger: 'Angļu', language: 'en-US' },
+  { trigger: 'Anglų', language: 'en-US' },
+  {
+    trigger: 'Angielski',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Angielska',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Inglês',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Ingles',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Engleză',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Английский',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Angličtina',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Angleščina',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Angleški',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Inglés',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Engelska',
+    language: 'en-US',
+  },
+  {
+    trigger: 'İngilizce',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Англійська',
+    language: 'en-US',
+  },
+  {
+    trigger: 'Англійською',
+    language: 'en-US',
+  },
+  {
     trigger: 'Български',
     language: 'bg',
   },
