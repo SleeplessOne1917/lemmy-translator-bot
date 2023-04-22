@@ -576,7 +576,115 @@ export const translateTriggers: TriggerInfo[] = [
     language: 'nl',
   },
   {
-    trigger: 'Nederlandse',
+    trigger: 'Dutch',
+    language: 'nl',
+  },
+  {
+    trigger: 'Холандски',
+    language: 'nl',
+  },
+  {
+    trigger: 'Нидерландски',
+    language: 'nl',
+  },
+  {
+    trigger: '荷兰',
+    language: 'nl',
+  },
+  {
+    trigger: 'Holand',
+    language: 'nl',
+  },
+  {
+    trigger: 'Nizozem',
+    language: 'nl',
+  },
+  {
+    trigger: 'Holland',
+    language: 'nl',
+  },
+  {
+    trigger: 'Hollanti',
+    language: 'nl',
+  },
+  {
+    trigger: 'Hollannin',
+    language: 'nl',
+  },
+  {
+    trigger: 'Néerlandais',
+    language: 'nl',
+  },
+  {
+    trigger: 'Niederländisch',
+    language: 'nl',
+  },
+  {
+    trigger: 'Holländisch',
+    language: 'nl',
+  },
+  {
+    trigger: 'Ολλανδικ',
+    language: 'nl',
+  },
+  {
+    trigger: 'Belanda',
+    language: 'nl',
+  },
+  {
+    trigger: 'Olandese',
+    language: 'nl',
+  },
+  {
+    trigger: 'オランダ語',
+    language: 'nl',
+  },
+  {
+    trigger: 'ダッチ',
+    language: 'nl',
+  },
+  {
+    trigger: '네덜란드',
+    language: 'nl',
+  },
+  {
+    trigger: '蘭語',
+    language: 'nl',
+  },
+  {
+    trigger: 'Olandų',
+    language: 'nl',
+  },
+  {
+    trigger: 'Nyderlandų',
+    language: 'nl',
+  },
+  {
+    trigger: 'Holendersk',
+    language: 'nl',
+  },
+  {
+    trigger: 'Neerlandês',
+    language: 'nl',
+  },
+  {
+    trigger: 'Olandez',
+    language: 'nl',
+  },
+  {
+    trigger: 'Голланд',
+    language: 'nl',
+  },
+  {
+    trigger: 'Neerlandés',
+    language: 'nl',
+  },
+  {
+    trigger: 'Nederländska',
+    language: 'nl',
+  },
+  {
+    trigger: 'Holländsk',
     language: 'nl',
   },
   {
