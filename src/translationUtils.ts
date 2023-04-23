@@ -1192,10 +1192,19 @@ export const translateTriggers: TriggerInfo[] = [
   { trigger: 'Török', language: 'tr' },
   { trigger: 'トルコ', language: 'tr' },
   { trigger: '터키', language: 'tr' },
-  {
-    trigger: 'Українська',
-    language: 'uk',
-  },
+
+  // Ukranian
+  { trigger: 'Укра', language: 'uk' },
+  { trigger: 'Ukra', language: 'uk' },
+  { trigger: '乌克兰', language: 'uk' },
+  { trigger: 'Oekraïen', language: 'uk' },
+  { trigger: 'Ουκραν', language: 'uk' },
+  { trigger: 'Ukrán', language: 'uk' },
+  { trigger: 'ウクラ', language: 'uk' },
+  { trigger: '우크라이나', language: 'uk' },
+  { trigger: 'Ukrāņ', language: 'uk' },
+  { trigger: 'Ukriev', language: 'uk' },
+  { trigger: 'Ucra', language: 'uk' },
 ];
 
 export const signoffMap = new Map<TargetLanguageCode, string>([
