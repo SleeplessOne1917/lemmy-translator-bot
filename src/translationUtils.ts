@@ -1064,18 +1064,15 @@ export const translateTriggers: TriggerInfo[] = [
   { trigger: 'Poľ', language: 'pl' },
   { trigger: 'Lehçe', language: 'pl' },
   { trigger: 'Польськ', language: 'pl' },
-  {
-    trigger: 'Português',
-    language: 'pt-PT',
-  },
-  {
-    trigger: 'Portuguesa',
-    language: 'pt-PT',
-  },
-  {
-    trigger: 'Portugueses',
-    language: 'pt-PT',
-  },
+  { trigger: 'Portug', language: 'pt-BR' },
+  { trigger: 'Португал', language: 'pt-BR' },
+  { trigger: '葡萄牙', language: 'pt-BR' },
+  { trigger: 'Πορτογαλικ', language: 'pt-BR' },
+  { trigger: 'Portoghese', language: 'pt-BR' },
+  { trigger: 'ポルトガル', language: 'pt-BR' },
+  { trigger: 'ポルトギーゼ', language: 'pt-BR' },
+  { trigger: '포르투갈', language: 'pt-BR' },
+  { trigger: 'Portekiz', language: 'pt-BR' },
   {
     trigger: 'Românesc',
     language: 'ro',
