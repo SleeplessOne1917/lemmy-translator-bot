@@ -1121,10 +1121,24 @@ export const translateTriggers: TriggerInfo[] = [
   { trigger: 'Слова', language: 'sk' },
   { trigger: 'Slovašk', language: 'sk' },
   { trigger: 'Slovaq', language: 'sk' },
-  {
-    trigger: 'Slovenski',
-    language: 'sl',
-  },
+
+  // Slovenian
+  { trigger: 'Sloven', language: 'sl' },
+  { trigger: 'Словен', language: 'sl' },
+  { trigger: '斯洛文尼亚', language: 'sl' },
+  { trigger: 'Slovin', language: 'sl' },
+  { trigger: 'Sloveen', language: 'sl' },
+  { trigger: 'Slovèn', language: 'sl' },
+  { trigger: 'Slowenisch', language: 'sl' },
+  { trigger: 'Σλοβενικ', language: 'sl' },
+  { trigger: 'Szlovén', language: 'sl' },
+  { trigger: 'スロベニア', language: 'sl' },
+  { trigger: 'スロヴェニア', language: 'sl' },
+  { trigger: '슬로베니아', language: 'sl' },
+  { trigger: 'Slovēņ', language: 'sl' },
+  { trigger: 'Slovėn', language: 'sl' },
+  { trigger: 'Słoweńsk', language: 'sl' },
+  { trigger: 'Eslov', language: 'sl' },
   {
     trigger: 'Español',
     language: 'es',
