@@ -1180,10 +1180,18 @@ export const translateTriggers: TriggerInfo[] = [
   { trigger: 'Suec', language: 'sv' },
   { trigger: 'Sued', language: 'sv' },
   { trigger: 'İsveç', language: 'sv' },
-  {
-    trigger: 'Türkçe',
-    language: 'tr',
-  },
+
+  // Turkish
+  { trigger: 'Tür', language: 'tr' },
+  { trigger: 'Tur', language: 'tr' },
+  { trigger: 'Тур', language: 'tr' },
+  { trigger: '土耳其', language: 'tr' },
+  { trigger: 'Tyrkisk', language: 'tr' },
+  { trigger: 'Τουρκικ', language: 'tr' },
+  { trigger: 'Τούρκικ', language: 'tr' },
+  { trigger: 'Török', language: 'tr' },
+  { trigger: 'トルコ', language: 'tr' },
+  { trigger: '터키', language: 'tr' },
   {
     trigger: 'Українська',
     language: 'uk',
