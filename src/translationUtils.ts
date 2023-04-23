@@ -1073,14 +1073,32 @@ export const translateTriggers: TriggerInfo[] = [
   { trigger: 'ポルトギーゼ', language: 'pt-BR' },
   { trigger: '포르투갈', language: 'pt-BR' },
   { trigger: 'Portekiz', language: 'pt-BR' },
-  {
-    trigger: 'Românesc',
-    language: 'ro',
-  },
-  {
-    trigger: 'Русский',
-    language: 'ru',
-  },
+
+  // Romanian
+  { trigger: 'Rom', language: 'ro' },
+  { trigger: 'Рум', language: 'ro' },
+  { trigger: '罗马尼亚', language: 'ro' },
+  { trigger: 'Roemeen', language: 'ro' },
+  { trigger: 'Rum', language: 'ro' },
+  { trigger: 'Roumain', language: 'ro' },
+  { trigger: 'Ρουμανικ', language: 'ro' },
+  { trigger: 'ルーマニア', language: 'ro' },
+  { trigger: '루마니아', language: 'ro' },
+
+  // Russian
+  { trigger: 'Rus', language: 'ru' },
+  { trigger: 'Рус', language: 'ru' },
+  { trigger: '俄罗斯', language: 'ru' },
+  { trigger: 'Vene', language: 'ru' },
+  { trigger: 'Venä', language: 'ru' },
+  { trigger: 'Ρωσικ', language: 'ru' },
+  { trigger: 'Orosz', language: 'ru' },
+  { trigger: 'ロシア', language: 'ru' },
+  { trigger: '러시아', language: 'ru' },
+  { trigger: 'Krievu', language: 'ru' },
+  { trigger: 'Rosyjsk', language: 'ru' },
+  { trigger: 'Ryska', language: 'ru' },
+  { trigger: 'Російськ', language: 'ru' },
   {
     trigger: 'Slovenská',
     language: 'sk',
