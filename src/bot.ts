@@ -23,6 +23,9 @@ const bot = new LemmyBot({
     username: USERNAME_OR_EMAIL,
     password: PASSWORD,
   },
+  connection: {
+    secondsBetweenPolls: 30,
+  },
   federation: 'all',
   dbFile: 'db.sqlite3',
   handlers: {
