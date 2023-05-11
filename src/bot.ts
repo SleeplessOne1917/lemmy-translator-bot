@@ -1,5 +1,3 @@
-#!/usr/bin/env ts-node
-
 import LemmyBot, { CommentView, PostView } from 'lemmy-bot';
 import { config } from 'dotenv';
 import { limitMap, signoffMap, translateTriggers } from './translationUtils';
