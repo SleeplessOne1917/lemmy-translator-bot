@@ -66,7 +66,7 @@ const bot = new LemmyBot({
             languageCode
           );
 
-          createComment({
+          await createComment({
             content: `${text}\n\n*${signoffMap.get(languageCode)}*`,
             post_id: comment.post_id,
             parent_id: comment.id,
@@ -84,7 +84,7 @@ const bot = new LemmyBot({
             languageCode
           );
 
-          createComment({
+          await createComment({
             content: `${text}\n\n*${signoffMap.get(languageCode)}*`,
             post_id: comment.post_id,
             parent_id: comment.id,
