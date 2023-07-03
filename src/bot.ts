@@ -39,15 +39,15 @@ const bot = new LemmyBot({
 
       if (!languageCode) {
         createComment({
-          postId: comment.post_id,
-          parentId: comment.id,
+          post_id: comment.post_id,
+          parent_id: comment.id,
           content: 'Could not detect language to translate to',
         });
       } else if ((await translator.getUsage()).anyLimitReached()) {
         createComment({
           content: limitMap.get(languageCode)!,
-          postId: comment.post_id,
-          parentId: comment.id,
+          post_id: comment.post_id,
+          parent_id: comment.id,
         });
       } else {
         const { type, data } = await getParentOfComment(comment);
@@ -68,8 +68,8 @@ const bot = new LemmyBot({
 
           createComment({
             content: `${text}\n\n*${signoffMap.get(languageCode)}*`,
-            postId: comment.post_id,
-            parentId: comment.id,
+            post_id: comment.post_id,
+            parent_id: comment.id,
           });
         } else {
           const {
@@ -86,8 +86,8 @@ const bot = new LemmyBot({
 
           createComment({
             content: `${text}\n\n*${signoffMap.get(languageCode)}*`,
-            postId: comment.post_id,
-            parentId: comment.id,
+            post_id: comment.post_id,
+            parent_id: comment.id,
           });
         }
       }
