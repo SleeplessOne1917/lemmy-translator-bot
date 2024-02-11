@@ -10,13 +10,13 @@
   "author": "",
   "license": "APGL-3.0",
   "devDependencies": {
-    "@types/node": "^20.10.5",
+    "@types/node": "^20.11.17",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "deepl-node": "^1.11.0",
-    "dotenv": "^16.3.1",
-    "lemmy-bot": "^0.5.0"
+    "deepl-node": "^1.11.1",
+    "dotenv": "^16.4.2",
+    "lemmy-bot": "^0.6.0"
   }
 }

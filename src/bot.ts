@@ -1,4 +1,4 @@
-import LemmyBot, { CommentView, PostView } from 'lemmy-bot';
+import LemmyBot from 'lemmy-bot';
 import { config } from 'dotenv';
 import { limitMap, signoffMap, translateTriggers } from './translationUtils';
 import { Translator } from 'deepl-node';
@@ -34,7 +34,7 @@ const bot = new LemmyBot({
       const languageCode = translateTriggers.find(({ trigger, language }) =>
         comment.content
           .toLocaleLowerCase(language)
-          .includes(trigger.toLocaleLowerCase(language))
+          .includes(trigger.toLocaleLowerCase(language)),
       )?.language;
 
       if (!languageCode) {
@@ -50,10 +50,10 @@ const bot = new LemmyBot({
           parent_id: comment.id,
         });
       } else {
-        const { type, data } = await getParentOfComment(comment);
+        const parentResponse = await getParentOfComment(comment);
 
-        if (type === 'post') {
-          const { post } = data as PostView;
+        if (parentResponse.type === 'post') {
+          const { post } = parentResponse.post.post_view;
           const { text } = await translator.translateText(
             `# ${post.name}${
               post.body
@@ -63,7 +63,7 @@ const bot = new LemmyBot({
                 : ''
             }`,
             null,
-            languageCode
+            languageCode,
           );
 
           await createComment({
@@ -74,14 +74,14 @@ const bot = new LemmyBot({
         } else {
           const {
             comment: { content: parentContent },
-          } = data as CommentView;
+          } = parentResponse.comment.comment_view;
 
           const { text } = await translator.translateText(
             shouldSpoiler(parentContent)
               ? spoilerify(parentContent)
               : parentContent,
             null,
-            languageCode
+            languageCode,
           );
 
           await createComment({
